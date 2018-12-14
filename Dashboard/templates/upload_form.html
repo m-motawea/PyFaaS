@@ -1,0 +1,28 @@
+<html>
+    <head><title>Create Function</title>
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/font-awesome.css">
+        <link rel="stylesheet" href="/static/css/animate.css">
+        <link rel="stylesheet" href="/static/css/templatemo_misc.css">
+        <link rel="stylesheet" href="/static/css/templatemo_style.css">
+        <link rel="stylesheet" href="/static/css/owl-carousel.css">
+
+        <script src="/static/js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <h1>Upload your code and requirements.txt files:</h1>
+        <form enctype="multipart/form-data" method="POST">
+            Code File: <input type="file" name="code" /><br>
+            Requirements File: <input type="file" name="requirements" /><br>
+            Function Name: <input type="text" name="function" /><br>
+            Python Version: <select name="version">
+                    <option value="2.7">2.7</option>
+                    <option value="3.4">3.4</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3.6">3.6</option>
+                </select>
+            <input type="submit" value="upload" /><br>
+        </form>
+    </body>
+</html>

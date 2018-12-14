@@ -1,0 +1,531 @@
+body{
+    padding-top: 46px;
+}
+.navbar-dark{
+    height: 46px;
+}
+/*navbar-brand */
+.navbar-dark .navbar-brand {
+    color: #1488c6;
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+}
+
+.navbar-dark .navbar-brand span {
+    color:#eee;
+    font-size: 1rem;
+    padding-left: 2px;
+
+}
+/*Home
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    background-color: #E41b17;
+}*/
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #bbb;
+    background-color: #353a40;
+    padding-left: 10px;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #eee;
+    
+}
+/*for Home color*/
+.navbar-dark{
+    padding-bottom: 0px;
+    padding-top: 1px;
+}
+/*dropmenu*/
+.dropdown-menu {
+        background-color: #333;
+        border-top:3px solid #1488c6;
+}
+.dropdown-divider{
+        border-top:1px solid #1488c6;
+}
+/* .dropdown-toggle::after{
+    color: #E41b17;
+} */
+.dropdown-item{
+    color:#bbb;
+
+}
+.dropdown-item:hover{
+    background-color: #333;
+    color: #bbb;
+
+}
+/*end dropmenu*/
+
+/*signInButton*/
+.btn-outline-success{
+    color: #1488c6;
+
+    border-color:#1488c6;
+}
+.btn-outline-success:hover{
+   
+    border-color: #1488c6;
+    background-color: #1488c6;
+    color: #fff;
+}
+.btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(20, 136, 198,0.5);
+}
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(20, 136, 198,0.5);
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    border-color: #1488c6;
+    background-color: rgb(20, 136, 198);
+    color: #bbb;
+}
+/*end signInButton*/
+
+/*carousel*/
+.carousel-caption{
+
+    bottom: 80px;
+    background-color: rgb(3, 3, 3,.3); 
+    padding-right:30px;
+    padding-left: 30px; 
+    width: 50%;
+    left: 25%;
+    border-radius: 4px;  
+
+}
+ .carousel-caption h3{
+font-weight: bolder;    
+} 
+/*end carousel*/
+/*about section*/
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about .intro{
+    color: #666;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.about h2 span {
+    color: #1488c6;
+
+}
+.about h2 {
+color: #444;
+font-weight: bolder;
+}
+.fas{
+    font-size: 1.5em;
+}
+/*end about section*/
+/* start Services Section */
+.services{
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.services h4{
+    margin-bottom: 15px;
+    color: #444;
+}
+.services .fas{
+    color: #1488c6;
+}
+.fab{
+    font-size: 1.5em;
+
+}
+.services p{
+    line-height: 2em;
+    color: #666;
+    font-size: 17px;
+
+}
+.services h1{
+    margin-bottom: 50px;
+    color: #333;
+}
+.services .col-md-6{
+    margin-bottom: 17px;
+}
+/* end Services Section */
+/* start company section */
+.company{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.company h1{
+    margin-bottom: 40px;
+    color: #333;
+}
+.company  p{
+    font-size: 22px;
+    color: #444;
+    line-height: 170%;
+
+}
+/* end company Section */
+/* start platform section */
+.platform{
+    background-color: #eee;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.platform img{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+   
+}
+.platform img:hover{
+    opacity: 1;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out;
+    transition:all 0.4s ease-in-out;
+
+    
+}
+
+/* end platform section */
+/* Start distros section */
+.distros{
+    background: url("../img/metallic.jpg")no-repeat center center fixed;
+    width: 100%;
+    min-height: 515px;
+}
+.os{
+background: rgba(2, 2, 2, 0.749);
+color: #cee3eb;
+min-height: 515px;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+.os h1{
+    margin-bottom: 60px;
+}
+.rounded-circle{
+    border-radius:21%!important
+}
+.os .distro{
+    margin-bottom: 40px;
+
+}
+.os .distro:hover img {
+-webkit-transform: scale(1.05,1.05) rotate(360deg);
+-moz-transform: scale(1.05,1.05) rotate(360deg);
+-o-transform: scale(1.05,1.05) rotate(360deg);
+transform: scale(1.05,1.05) rotate(360deg);
+
+}
+.distro img {
+-webkit-transition-duration: 1.7s;
+-moz-transition-duration:1.7s;
+-o-transition-duration:1.7s;
+transition-duration:1.7s;
+
+}
+
+
+/* end distros section */
+
+/* start price table */
+.price{
+    background-color: #eee;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.price h1{
+    margin-bottom: 40px;
+    color: #333;
+}
+.price .price_box{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.price .price_box h2{
+margin: 5px 0 15px ;
+color: #444;
+}
+.price .price_box p{
+font-size: 35px;
+font-weight:bold;
+color: rgb(19, 136, 199,.8); 
+}
+.price .price_box ul{
+    line-height: 220%;
+    font-size: 18px;
+}
+.price .price_box a{
+margin-bottom: 22px;
+}
+.btn-info{
+    background-color: #2188c6;
+    border-color: #2288c6;
+}
+.btn-info:hover{
+    background-color: #2188c6;
+    border-color: rgb(34, 136, 198);  
+}
+.btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(19, 136, 199,.5);
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+    color: #fff;
+    background-color:#2188c6;
+    border-color: #1d76ad;
+}
+
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgba(34, 136, 198,.4);
+}
+/* end price table */
+/* start footer */
+footer{
+    background: #333;
+    color: #AAA;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+footer a{
+    color: #aaaaaa;
+}
+footer a:hover{
+    color: #fff;
+}
+footer h3{
+    color: #258ac4;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+    font-weight: bolder;
+}
+footer h5{
+    margin: 20px 0 20px;
+    color: #5b7c90;
+     margin-left: 145px;
+
+
+}
+footer #logo{
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 160px;
+}
+footer .fas{
+    color: #1488c6;
+    margin-right: 7px;
+}
+footer .contact li{
+    margin-bottom: 7px;
+    margin-left: 105px;
+
+
+}
+/*footer .contact h3{
+
+}*/
+footer .two-columns{
+overflow: hidden;
+}
+footer .two-columns li{
+    width: 50%;
+    float: left;
+    padding: 5px 0;
+}
+footer .social-list{
+    overflow: hidden;
+    margin: 20px 0 10px;
+}
+footer .social-list li{
+    float: left;
+    margin-right:5px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+footer .social-list li:hover{
+    opacity: 1;
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+
+/* end footer */
+/* start subscribe section */
+.subscribe{
+font-weight: bolder; 
+padding-bottom: 40px;
+padding-top: 40px;
+}
+.subscribe h1{
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+.subscribe form{
+
+display:inline;
+}
+.subscribe .form-control{
+    width: 500px;
+
+}
+
+/* end subscribe section */
+
+/* Login Form */
+
+/* End Login Form */
+/* start profile */
+
+
+
+._3ubp span{
+    display: inline-block ;
+}
+._4-fs {
+    display: inline-block;
+    padding-right: 21px;
+    position: relative;
+}
+._4-h8 {
+    border-bottom: 16px solid #e9ebee;
+    border-right: 16px solid transparent;
+    border-left: 16px solid transparent;
+    bottom: 4px;
+    display: none;
+    font-size: 0;
+    height: 0;
+    right: 50%;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+}
+/* ._4-h8::after {
+    border-bottom: 8px solid #fff;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    content: '';
+    right: -8px;
+    position: absolute;
+    top: 1px;
+} */
+/* start introduction section */
+.introsec{
+background-color: #fff;
+margin-left: 280px;
+margin-top: 45px;
+height: 1125px;
+width: 1040px;
+box-shadow: 2px 1px 5px 2px #00000016;
+border-radius: 3px;
+padding-top: 30px;
+padding-left: 40px;
+}
+.line{
+    width: 200px;
+    height: 2px;
+    border-bottom: 1px solid #1b588594;
+    position: absolute;} 
+.inputFormPadding {
+    position: relative;
+    padding: 12px 10px;
+    margin-top: 15px;
+    border: 1px solid #d5d5dd;
+    background: #fff;
+}
+.introsec p{
+    line-height: 2;
+    padding-top: 18px;
+
+}
+.introsec button{
+    margin-left: 750.820px;
+    margin-top: 30px
+}
+
+/* end introduction section */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 190px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #343a40; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+/* The navigation menu links */
+.sidenav li{
+    padding: 16px 8px 2px 4px;
+    color: rgba(20, 160, 198, 0.75);
+    font-size: 18px;
+  }
+ .sidenav li:hover{
+     color: #1488c6;
+     font-size: larger;
+ } 
+.sidenav ul{
+    list-style-type: none;
+    padding-left: 20px;
+
+}
+.sidenav a {
+    padding: 5px 0px 5px 22px;
+    color: #ccc;
+    display: block;
+
+}
+
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    
+    color: #ffffffe6;
+}
+.sidenav a:visited {
+    color: #7d86931f;
+}
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 15px;}
+}
+.teamcard{
+    margin-left: 180px;
+    margin-top: 60px;
+
+}
+.card{
+    width: 100%;
+}
+.checkBox{
+padding: 16px 16px;
+}
+ .privil{ border-bottom: 1px solid #e9ecef;
+    margin-bottom: 8px;
+}
+#add button{
+    margin: 16px 16px;
+}
+.card-title{
+    color: #14a0c6bf;
+}
+/* end profile */

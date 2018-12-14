@@ -1,0 +1,27 @@
+{
+    "certfile": "",
+    "keyfile": "",
+    "processes": 1,
+    "retries": 1,
+    "retry_delay": 1,
+    "timeout": 1,
+    "autoreload": 500,
+    "port": 9000,
+    "broker": {
+        "address": "127.0.0.1",
+        "username": "root",
+        "password": "root",
+        "port": 5672,
+        "vhost": "/",
+        "queue": "faas",
+        "exchange": ""
+    },
+    "database": {
+        "address": "127.0.0.1",
+        "port": 3306,
+        "username": "root",
+        "password": "root",
+        "name": "pyfaas_dashboard"
+    },
+    "cookie_secret": "bZJc2sWbQLKos6GkHn/VB9oXwQt8S0R0kRvJ5/xJ89E="
+}
