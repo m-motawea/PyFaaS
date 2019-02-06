@@ -48,6 +48,3 @@ class dbIO(object):
             setattr(obj, attr, update_dict[attr])
         self.session.commit()
         self.session.flush()
-
-    def __del__(self):
-        self.session.close()

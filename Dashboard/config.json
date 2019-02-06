@@ -8,7 +8,7 @@
     "autoreload": 500,
     "port": 9000,
     "broker": {
-        "address": "127.0.0.1",
+        "address": "rabbitmq",
         "username": "root",
         "password": "root",
         "port": 5672,
@@ -17,7 +17,7 @@
         "exchange": ""
     },
     "database": {
-        "address": "127.0.0.1",
+        "address": "mysql",
         "port": 3306,
         "username": "root",
         "password": "root",

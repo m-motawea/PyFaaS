@@ -4,3 +4,4 @@ passlib
 pika
 mysqlclient
 sqlalchemy
+pymysql

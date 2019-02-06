@@ -5,6 +5,7 @@ import os
 
 class BaseImage(object):
     def __init__(self, name, package, py_version):
+        self.cur_path = os.path.abspath(os.path.curdir)
         self.name = name
         self.package = package
         self.py_version = py_version
@@ -31,6 +32,9 @@ class BaseImage(object):
             os.system(f"touch {self.package.path}/Dockerfile")
             os.system(f'echo "{self.docker_file.getvalue().decode("utf-8")}" > {self.package.path}/Dockerfile')
             client.images.build(path=self.package.path, tag=self.name, nocache=True)
+
+    def __del__(self):
+        os.chdir(self.cur_path)
 
 
 

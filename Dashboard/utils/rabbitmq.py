@@ -35,6 +35,8 @@ class SimpleClient():
             while True:
                 if datetime.datetime.now() < end_time:
                     method_frame, header_frame, body = self.ch.basic_get(queue=queue)
+                    if not method_frame:
+                        continue
                     if method_frame.NAME != 'Basic.GetEmpty':
                         self.ch.basic_ack(delivery_tag=method_frame.delivery_tag)
                         return body
@@ -76,6 +78,7 @@ class FaaSClient(SimpleClient):
     def call_blocking_function(self, func_uuid, body, faas_consumers_queue="faas_listeners"):
         return_queue = uuid.uuid4().hex
         body["return_queue"] = return_queue
+        self.create_queue(return_queue)
         self.send(func_uuid, json.dumps(body), "")
         result = self.listen(return_queue)
         if result:
