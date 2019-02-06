@@ -19,6 +19,9 @@ class SimpleClient():
     def create_queue(self, name):
         self.ch.queue_declare(name)
 
+    def delete_queue(self, name):
+        self.ch.queue_delete(name)
+
     def send(self, queue, message, exchange=''):
         self.ch.basic_publish(
             exchange=exchange,
@@ -43,7 +46,10 @@ class SimpleClient():
 
 
     def __del__(self):
-        self.conn.close()
+        try:
+            self.conn.close()
+        except Exception as e:
+            pass
 
     
 class FaaSClient(SimpleClient):
@@ -73,6 +79,7 @@ class FaaSClient(SimpleClient):
         self.send(func_uuid, json.dumps(body), "")
         result = self.listen(return_queue)
         if result:
+            self.delete_queue(return_queue)
             return json.loads(result)
 
 
