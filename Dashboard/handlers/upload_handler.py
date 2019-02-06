@@ -4,7 +4,7 @@ from utils.orm_io import dbIO
 from middlewares.base_handler import SecureHandler
 from middlewares.decorators import authentication_required
 from models.functions import Function
-
+from utils.async_decorators import unblock
 
 class UploadHandler(SecureHandler):
     login_url = '/pyfaas/login'

@@ -3,6 +3,7 @@ from models.functions import Function
 from utils.orm_io import dbIO
 from utils.rabbitmq import FaaSClient
 import json
+import tornado
 
 
 class ExecutionHandler(SecureHandler):
@@ -25,6 +26,7 @@ class ExecutionHandler(SecureHandler):
             self.set_status(415)
             self.finish()
 
+    @tornado.web.gen.coroutine
     def post(self, function_uuid):
         if self.request.body:
             try:
